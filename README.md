@@ -1,8 +1,8 @@
 ## SQL [ Em construção ]
 
 **Objetivo:**<br>
-Mostrar consultas em tabelas, Join, View e análises estatísticas a partir dessas visões para análises estatísticas.
-Esse trabalho pode mostrar a criação de bancos e suas respectivas tabelas relacionais, entretanto o foco principal está na análise de Schemas já criados.
+Mostrar consultas em tabelas, Join, function, View, entre outros com construção de visões para análises estatísticas.<br>
+**Obs:** Esse trabalho pode mostrar a criação de bancos e suas respectivas tabelas relacionais, entretanto o foco principal está na análise de Schemas já criados.
 
 **Descrição:**<br>
 O Repositório mostra as consultas com suas respectivas otimizações com agrupamentos, dados relacionais, join, View, entre outras funcionalidades.
