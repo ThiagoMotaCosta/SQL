@@ -8,7 +8,7 @@ Esse trabalho pode mostrar a criação de bancos e suas respectivas tabelas rela
 O Repositório mostra as consultas com suas respectivas otimizações com agrupamentos, dados relacionais, join, View, entre outras funcionalidades.
 
 **Modelos disponíveis:**<br>
-- [Agrupamento, Join, Filtros, View](Consulta/README.md)
+- [Agrupamento, Join, Filtros, View](Consulta/banco_dados/filmes/README.md)
 
 
 <img src="images/database.png" width="100" height="100">
