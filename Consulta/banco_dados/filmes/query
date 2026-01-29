@@ -1,0 +1,20 @@
+/* ======= ANÁLISE EXPLORATÓRIA =======
+ Banco de dados de uma canal que aluga filmes */
+
+SELECT * FROM alugueis;
+SELECT * FROM filmes;
+
+/* =======  CRIAÇÃO VIEW  ======= 
+Trabalho realizado com conceitos de Agruphamentos, Filtragens, Subqueries e Jon*/
+
+CREATE VIEW nota_superior_media AS -- criação de VIEW para consultas recorrentes sem necessidade de realizar novas codificações
+SELECT -- seleciona as colunas correspondentes as tabelas (tabela.coluna)
+	filmes.titulo,
+	AVG(alugueis.nota) AS avaliacao_media
+FROM alugueis -- indicação da tabela consultada
+LEFT JOIN filmes -- utilização de junção de tabelas mantendo todas as linhas da tabela na esquerda 
+ON alugueis.id_filme = filmes.id_filme -- nesse caso, todas as linhas de alugueis são mantidas
+GROUP BY filmes.titulo -- o agrupamento é necessário para determinar a visão que deseja da média
+HAVING avaliacao_media >= (SELECT AVG(nota) FROM alugueis) -- condição para que a consulta seja somente para filmes acima da média que por sua vez está dinâmico para cada consulta
+ORDER BY avaliacao_media DESC;-- condição de ordenar do maior para o menor em relação ao resultado desejado
+
