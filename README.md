@@ -11,7 +11,7 @@ O Repositório mostra as consultas com suas respectivas otimizações com agrupa
 - [Agrupamento, Join, Filtros, View](Consulta/README.md)
 
 
-<img src="images/database.png" width="150" height="150">
+<img src="images/database.png" width="100" height="100">
 
 Fontes:
 Imagem: <a href="https://www.flaticon.com/free-icons/sql" title="sql icons">Sql icons created by Smashicons - Flaticon</a>
