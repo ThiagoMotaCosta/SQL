@@ -1,9 +1,15 @@
-## Consulta
+## Database Locadora
 
-### Modelo Conceitual [ Em Construção ]
+### Modelo Conceitual
+<img src="images/modelo_conceitual.png" width="600">
+** A relação entre tabela Atores (1) -Filmes (N) devido coniderarmos apenas ator(atriz) principal. 
+
 ### Modelo Lógico [ Em Construção ]
 
 **Banco de Dados (BD):** 
+-  alugueis.sql
+-  atores.sql
+-  clientes.sql
 -  filmes.sql
  
 **Cenário:**<br>
