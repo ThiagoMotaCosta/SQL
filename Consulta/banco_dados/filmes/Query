@@ -1,0 +1,21 @@
+/* ======= CONSULTA ESTRATÉGICA =======*/
+
+SELECT
+    f.genero as 'Genero', -- granularidade estratégica para estabelecer o plano de ação
+    COUNT(a.id_filme) as 'Qtd Alugueis', -- quantidade de filmes por genero que foram alugados
+    COUNT(DISTINCT n.titulo) as 'Qtd Acima Média', -- a visão da View "nota_superior_media" está por titulos, assim desejando saber a quantidade, por genero acima da média
+    100.0 * (COUNT(a.id_filme) / SUM(COUNT(a.id_filme)) OVER()) as '% Alugueis', -- qual a representatividade por genero de alugueis (função Janela)
+    ROUND((COUNT(DISTINCT n.titulo) / COUNT(a.id_filme)),2) as 'Resultado Avaliativo',  -- nota de avaliação dos clientes
+    COUNT(DISTINCT f.titulo) as 'Qtd Filmes Catalogo' -- quantidade de filmes por genero
+FROM
+	alugueis as a
+LEFT JOIN
+	filmes as f
+ON a.id_filme = f.id_filme -- join da tabela alugueis com filmes para que haja a informação de quantidade alugada por genero e informações de catalogo
+LEFT JOIN
+ nota_superior_media as n -- join com a View para informações das notas dos clientes *acima da média
+ON n.titulo = f.titulo
+GROUP BY
+	f.genero ** Agrupamento por genero
+ORDER BY 
+    count(a.id_filme) desc -- ordenação pelo número de alugueis
