@@ -1,4 +1,4 @@
-## Database Locadora
+## Locadora [ Maximização de Vendas ]
 
 ### Case:
 Uma empresa de aluguel de filmes deseja saber quais os títulos com notas maiores que a média para entendimento de preferência do público e elaboração de um plano de ação para maximização receita.
