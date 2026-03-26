@@ -8,7 +8,7 @@ Mostrar consultas em tabelas, Join, function, View, entre outros com construçã
 O Repositório mostra as consultas com suas respectivas otimizações com agrupamentos, dados relacionais, join, View, entre outras funcionalidades.
 
 **Modelos disponíveis:**<br>
-- [Case Locadora: Agrupamento, Join, Filtros, View](Consulta/banco_dados/filmes/README.md)
+- [Case Locadora: Maximixação de Vendas](Consulta/banco_dados/filmes/README.md) [Agrupamento, Join, View, Subquerys, Função Janela]
 
 
 <img src="images/database.png" width="100" height="100">
